@@ -2,6 +2,7 @@ import Hero from "@/components/Hero"
 import { ThemeToggle } from "@/components/ThemeToggle"
 import TechStack from "@/components/TechStack"
 import About from "@/components/About"
+import { Projects } from "@/components/Projects"
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       <Hero />
       <TechStack />
       <About />
+      <Projects />
     </main>
   )
 }
