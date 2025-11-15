@@ -2,14 +2,8 @@ import type React from "react"
 import type { Metadata } from "next"
 import { Space_Grotesk, Inter } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
-import { ThemeProvider, createTheme } from "@mui/material/styles";
+import { MUIThemeProvider } from "@/components/mui-theme-provider"
 import "./globals.css"
-
-const theme = createTheme({
-  palette: {
-    mode: "dark",
-  },
-});
 
 const spaceGrotesk = Space_Grotesk({
   subsets: ["latin"],
@@ -35,10 +29,10 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={`${spaceGrotesk.variable} ${inter.variable} font-body antialiased`}>
-        <ThemeProvider theme={theme} disableTransitionOnChange>
+        <MUIThemeProvider>
           {children}
           <Analytics />
-        </ThemeProvider>
+        </MUIThemeProvider>
       </body>
     </html>
   )
