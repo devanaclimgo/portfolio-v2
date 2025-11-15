@@ -17,7 +17,7 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: "Ana Gomes | Full-Stack Engineer",
-  description: "Full-Stack Engineer specialized in Ruby on Rails, React, Supabase, and AI integrations",
+  description: "Full-Stack Engineer specialized in Ruby on Rails, React, DevOps, and AI integrations",
   generator: "v0.app",
 }
 
