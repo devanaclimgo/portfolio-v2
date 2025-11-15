@@ -1,5 +1,5 @@
 import Hero from "@/components/Hero"
-import { ThemeToggle } from "@/components/ThemeToggle"
+import { LanguageToggle } from "@/components/LanguageToggle"
 import TechStack from "@/components/TechStack"
 import About from "@/components/About"
 import { Projects } from "@/components/Projects"
@@ -9,7 +9,7 @@ import CTA from "@/components/CTA"
 export default function Home() {
   return (
     <main className="relative">
-      <ThemeToggle />
+      <LanguageToggle />
       <Hero />
       <TechStack />
       <About />
@@ -19,3 +19,4 @@ export default function Home() {
     </main>
   )
 }
+
