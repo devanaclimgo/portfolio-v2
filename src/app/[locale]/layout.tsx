@@ -2,7 +2,6 @@ import type React from "react";
 import type { Metadata } from "next";
 import { Space_Grotesk, Inter } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
-import { MUIThemeProvider } from "@/components/mui-theme-provider";
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
 import { routing } from '@/i18n/routing';
@@ -70,10 +69,8 @@ export default async function RootLayout({
         className={`${spaceGrotesk.variable} ${inter.variable} font-body antialiased`}
       >
         <NextIntlClientProvider messages={messages}>
-          <MUIThemeProvider>
             {children}
             <Analytics />
-          </MUIThemeProvider>
         </NextIntlClientProvider>
       </body>
     </html>
